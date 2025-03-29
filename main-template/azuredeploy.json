@@ -12,7 +12,7 @@
 
     },
     "variables": {
-        "templateBaseUrl": "https://raw.githubusercontent.com/phreakmunkay/azurepolicy/master/templates/",
+        "templateBaseUrl": "https://raw.githubusercontent.com/phreakmunkay/azp/refs/heads/main/templates/",
 
         "linkedTemplates": {
             // Policy definitions
