@@ -1,0 +1,126 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "type": "string",
+            "metadata": {
+                "description": "Azure location for storing deployment metadata",
+                "name": "Deployment location"
+            }
+        }
+
+    },
+    "variables": {
+        "templateBaseUrl": "https://raw.githubusercontent.com/phreakmunkay/azurepolicy/master/templates/",
+
+        "linkedTemplates": {
+            // Policy definitions
+
+            // General
+            "restrictAllowedLocationsPolicy": "[concat(variables('templateBaseUrl'), 'policies/definitions/general/restrict-allowed-locations/azuredeploy.json')]",
+            // Naming Convention
+            "enforceNamingForResourcePolicy": "[concat(variables('templateBaseUrl'), 'policies/definitions/naming-convention/enforce-naming-for-resource/azuredeploy.json')]",
+            "enforceNamingForResourceGroupsPolicy": "[concat(variables('templateBaseUrl'), 'policies/definitions/naming-convention/enforce-naming-for-resourcegroups/azuredeploy.json')]",
+            // Tags
+            "enforceResourceGroupTagsPolicy": "[concat(variables('templateBaseUrl'), 'policies/definitions/tagging/enforce-resourcegroup-tags/azuredeploy.json')]",
+          
+            // Initiative definitions
+
+            // Naming Convention
+            "namingConventionInitiative": "[concat(variables('templateBaseUrl'), 'initiatives/definitions/naming-convention/azuredeploy.json')]",
+            // Tags
+            "taggingInitiative": "[concat(variables('templateBaseUrl'), 'initiatives/definitions/tagging/azuredeploy.json')]"
+        }
+    },
+    "resources": [
+        // Policy definitions
+
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "name": "restrictAllowedLocationsPolicyDeployment",
+            "location": "[parameters('location')]",
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[variables('linkedTemplates').restrictAllowedLocationsPolicy]",
+                    "contentVersion": "1.0.0.0"
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "name": "enforceNamingForResourcePolicyDeployment",
+            "location": "[parameters('location')]",
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[variables('linkedTemplates').enforceNamingForResourcePolicy]",
+                    "contentVersion": "1.0.0.0"
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "name": "enforceNamingForResourceGroupsPolicyDeployment",
+            "location": "[parameters('location')]",
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[variables('linkedTemplates').enforceNamingForResourceGroupsPolicy]",
+                    "contentVersion": "1.0.0.0"
+                }
+            }
+        },
+         {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "name": "enforceResourceGroupTagsPolicyDeployment",
+            "location": "[parameters('location')]",
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[variables('linkedTemplates').enforceResourceGroupTagsPolicy]",
+                    "contentVersion": "1.0.0.0"
+                }
+            }
+        },
+         // Initiative definitions
+        {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "name": "namingConventionInitiativeDeployment",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "Microsoft.Resources/deployments/enforceNamingForResourcePolicyDeployment",
+                "Microsoft.Resources/deployments/enforceNamingForResourceGroupsPolicyDeployment"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[variables('linkedTemplates').namingConventionInitiative]",
+                    "contentVersion": "1.0.0.0"
+                }
+            }
+        },
+          {
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2018-05-01",
+            "name": "taggingInitiativeDeployment",
+            "location": "[parameters('location')]",
+            "dependsOn": [
+                "Microsoft.Resources/deployments/enforceResourceGroupTagsPolicyDeployment"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[variables('linkedTemplates').taggingInitiative]",
+                    "contentVersion": "1.0.0.0"
+                }
+            }
+        }
+    ]
+}
