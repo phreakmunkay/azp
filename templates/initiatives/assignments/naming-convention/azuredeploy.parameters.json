@@ -23,8 +23,7 @@
                         "TEST",
                         "DEV",
                         "LIVE"
-                    ],
-                    "defaultValue": "PROD"
+                    ]                    
                 },
                 "automationAccountAbbreviation": {
                     "value": "aa"
