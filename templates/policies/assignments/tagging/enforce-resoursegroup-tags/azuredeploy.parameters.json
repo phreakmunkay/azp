@@ -18,7 +18,8 @@
                         "Production",
                         "Staging",
                         "Test",
-                        "Development"
+                        "Development",
+                        "DR"
                     ]
                 },
                 "allowedCriticalityTagValues": {
