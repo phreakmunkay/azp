@@ -44,14 +44,7 @@
                             "description": "A short name for customer ideally 2-3 Letters"
                         }
                     },
-                    "resourceUse": {
-                        "type": "string",
-                        "metadata": {
-                            "displayName": "resource Use abbreviation",
-                            "description": "A short name for Use, i.e ADC, MGMT,BKP ideally 2-4 Letters"
-                        }
-                    },
-                    "resourceStatus": {
+                     "resourceStatus": {
                         "type": "string",
                         "metadata": {
                             "displayName": "resource Environement status abbreviation",
@@ -76,7 +69,61 @@
                             {
                                 "not": {
                                     "field": "name",
-                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-', parameters('resourceUse'), '-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-..-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                }
+                            }, 
+                            {
+                                "not": {
+                                    "field": "name",
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-...-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                }
+                            }, 
+                            {
+                                "not": {
+                                    "field": "name",
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-....-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                }
+                            },
+                            {
+                                "not": {
+                                    "field": "name",
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-.....-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                }
+                            },
+                            {
+                                "not": {
+                                    "field": "name",
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-......-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                }
+                            },
+                             {
+                                "not": {
+                                    "field": "name",
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-.......-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                }
+                            },
+                             {
+                                "not": {
+                                    "field": "name",
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-........-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                }
+                            },
+                             {
+                                "not": {
+                                    "field": "name",
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-.........-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                }
+                            },
+                             {
+                                "not": {
+                                    "field": "name",
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-..........-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                }
+                            },
+                             {
+                                "not": {
+                                    "field": "name",
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-...........-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
                                 }
                             },
                             {
