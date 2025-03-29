@@ -17,13 +17,8 @@
                     "value": "CDT"
                 },
                 "resourceStatus": {
-                    "value": [ 
-                        "PROD",
-                        "DR",
-                        "TEST",
-                        "DEV",
-                        "LIVE"
-                    ]                    
+                    "value": 
+                        "PROD"                                                               
                 },
                 "automationAccountAbbreviation": {
                     "value": "aa"
