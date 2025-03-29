@@ -331,7 +331,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('automationAccountAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }       
                         }
                     },
                     {
@@ -343,7 +350,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('applicationGatewayAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -355,7 +369,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('applicationInsightsAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -367,7 +388,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('apiManagementServiceAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -379,7 +407,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('availabilitySetAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -391,7 +426,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('applicationServiceEnvironmentAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -403,7 +445,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('applicationSecurityGroupAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -415,7 +464,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('appServicePlanAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -427,7 +483,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('cdnProfileAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -439,7 +502,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('gatewayConnectionAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -451,7 +521,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('cognitiveServicesAccountAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -463,7 +540,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('cosmosDBAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -475,7 +559,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('sqlDatabaseAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -487,7 +578,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('sqlDataWarehouseAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -499,7 +597,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('eventHubAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -511,7 +616,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('eventHubNamespaceAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -523,7 +635,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('keyVaultAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -535,7 +654,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('logAnalyticsWorkspaceAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -547,7 +673,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('logicAppAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -559,7 +692,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('loadBalancerAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -571,7 +711,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('localNetworkGatewayAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -583,7 +730,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('machineLearningWorkspaceAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -595,7 +749,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('notificationHubAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -607,7 +768,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('notificationHubNamespaceAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -619,7 +787,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('networkInterfaceAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -631,7 +806,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('networkSecurityGroupAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -643,7 +825,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('publicIPAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -655,7 +844,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('cacheForRedisAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -667,7 +863,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('routeTableAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -679,7 +882,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('serviceBusAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -691,7 +901,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('serviceBusQueueAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -703,7 +920,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('virtualNetworkSubnetAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -715,7 +939,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('servicePrincipalAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -727,7 +958,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('sqlServerAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -739,7 +977,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('sqlServerManagedInstanceAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -751,7 +996,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('searchServiceAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -763,7 +1015,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('trafficManagerProfileAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -775,7 +1034,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('virtualNetworkGatewayAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -787,7 +1053,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('virtualMachineAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     },
                     {
@@ -799,7 +1072,14 @@
                             },
                             "resourceAbbreviation": {
                                 "value": "[[parameters('virtualNetworkAbbreviation')]"
-                            }
+                            },                            
+                            "customerAbbreviation": { 
+                                "value": "[[parameters('customerAbbreviation')]"
+                            }   
+                            ,                            
+                            "resourceStatus": { 
+                                "value": "[[parameters('resourceStatus')]"
+                            }  
                         }
                     }
                 ]
