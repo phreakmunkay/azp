@@ -21,6 +21,20 @@
                     "category": "Naming convention"
                 },
                 "parameters": {
+                    "customerAbbreviation": {
+                        "type": "string",
+                        "metadata": {
+                            "displayName": "Customer abbreviation",
+                            "description": "A short name for customer ideally 2-3 Letters"
+                        }
+                    },
+                     "resourceStatus": {
+                        "type": "string",
+                        "metadata": {
+                            "displayName": "resource Environement status abbreviation",
+                            "description": "choose from PROD,LIVE,DEV,TEST,DR"
+                        }
+                    },  
                     "automationAccountAbbreviation": {
                         "type": "string",
                         "metadata": {
