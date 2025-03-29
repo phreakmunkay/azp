@@ -29,7 +29,7 @@
                         }
                     },
                      "resourceStatus": {
-                        "type": "string",
+                        "type": "array",
                         "metadata": {
                             "displayName": "resource Environement status abbreviation",
                             "description": "choose from PROD,LIVE,DEV,TEST,DR"
