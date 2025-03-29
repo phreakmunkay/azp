@@ -77,7 +77,7 @@
                             {
                                 "not": {
                                     "field": "name",
-                                    "match": "[[concat(parameters('customerAbbreviation')'-'parameters('resourceAbbreviation')'-'parameters('resourceUse')'-'parameters('resourceStatus')'-'parameters('resourceRegion')'-###'')]" 
+                                    "match": "[[concat(parameters('customerAbbreviation')'-'parameters('resourceAbbreviation')'-'parameters('resourceUse')'-'parameters('resourceStatus')'-'parameters('resourceRegion')'-###')]" 
                                 }
                             }
                         ]
