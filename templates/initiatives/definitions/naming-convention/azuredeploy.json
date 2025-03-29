@@ -29,9 +29,9 @@
                         }
                     },
                      "resourceStatus": {
-                        "type": "array",
+                        "type": "string",
                         "metadata": {
-                            "displayName": "resource Environement status abbreviation",
+                            "displayName": "resource Environment status abbreviation",
                             "description": "choose from PROD,LIVE,DEV,TEST,DR"
                         }
                     },  
