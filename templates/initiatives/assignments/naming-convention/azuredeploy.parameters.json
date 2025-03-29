@@ -13,10 +13,10 @@
                 "comment": "Policy parameters should be provided as an object: https://docs.microsoft.com/en-us/azure/azure-resource-manager/deploy-to-subscription#assign-policy"
             },
             "value": {
-                "customerAbbreviation":{
+                "customerAbbreviation": {
                     "value": "CDT"
                 },
-                "resourceStatus":{
+                "resourceStatus": {
                     "value": "PROD"
                 },
                 "automationAccountAbbreviation": {
