@@ -72,12 +72,17 @@
                             {
                                 "field": "type",
                                 "equals": "[[parameters('resourceType')]" //Use an additional left bracket here, so the function is not invoked in the ARM template itself: https://docs.microsoft.com/en-us/azure/azure-resource-manager/template-expressions#escape-characters 
-                            },
-                            
+                            },                            
                             {
                                 "not": {
                                     "field": "name",
-                                    "match": "[[concat(parameters('customerAbbreviation'), '-'parameters('resourceAbbreviation'), '-'parameters('resourceUse'), '-'parameters('resourceStatus'), '-'parameters('resourceRegion'), '-###')]" 
+                                    "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-', parameters('resourceUse'), '-', parameters('resourceStatus'), '-', parameters('resourceRegion'), '-###')]" 
+                                }
+                            },
+                            {
+                                "not": {
+                                    "field": "name",
+                                    "match": "[[concat('..-', parameters('resourceAbbreviation'), '-...')]"
                                 }
                             }
                         ]
