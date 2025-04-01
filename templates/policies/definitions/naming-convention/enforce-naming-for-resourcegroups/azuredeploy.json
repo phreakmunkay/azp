@@ -27,20 +27,95 @@
                         {
                           "field": "type",
                           "equals": "Microsoft.Resources/subscriptions/resourceGroups"
-                        },
-                        {
-                          "not": {
-                            "field": "name",
-                            "match": "CDT-RG-DR-UKW-###"
-                          }
-                        },
-                        
-                        {
-                          "not": {
-                            "field": "name",
-                            "match": "CDT-RG-PROD-UKS-###"
-                          }
-                            }
+                        }{
+  "mode": "All",
+  "policyRule": {
+    "if": {
+      "allOf": [
+        {
+          "field": "type",
+          "equals": "Microsoft.Resources/subscriptions/resourceGroups"
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-??-...-PROD-UKS-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-??-...-DR-UKW-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-???-...-PROD-UKS-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-???-...-DR-UKW-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-????-...-PROD-UKS-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-????-...-DR-UKW-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-??-....-PROD-UKS-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-??-....-DR-UKW-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-???-.....-PROD-UKS-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-???-.....-DR-UKW-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-????-......-PROD-UKS-###"
+          }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "CDT-RG-????-......-DR-UKW-###"
+          }
+        }
+      ]
+    },
+    "then": {
+      "effect": "deny"
+    }
+  },
+  "parameters": {}
+}
                       ]
                     },
                     "then": {

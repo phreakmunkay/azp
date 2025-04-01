@@ -155,6 +155,27 @@
                                     "match": "[[concat(parameters('customerAbbreviation'), '-', parameters('resourceAbbreviation'), '-.........-', parameters('resourceStatus'), '-UKW-###')]" 
                                 }
                             }
+                            ,
+                              {
+                                "not": {
+                                    "field": "name",
+                                    "match": "AzureBastionSubnet" 
+                                }
+                            }
+                            ,
+                              {
+                                "not": {
+                                    "field": "name",
+                                    "match": "AzureFirewallSubnet" 
+                                }
+                            }
+                            ,
+                              {
+                                "not": {
+                                    "field": "name",
+                                    "match": "GatewaySubnet" 
+                                }
+                            }
                         
                         ]
                     },
