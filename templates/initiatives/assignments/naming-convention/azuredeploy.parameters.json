@@ -14,7 +14,7 @@
             },
             "value": {
                 "customerAbbreviation": {
-                    "value": "CDT"
+                    "value": ""
                 },
                 "resourceStatus": {
                     "value": 
@@ -105,7 +105,7 @@
                     "value": "redis"
                 },
                 "routeTableAbbreviation": {
-                    "value": "route"
+                    "value": "RT"
                 },
                 "serviceBusAbbreviation": {
                     "value": "sb"

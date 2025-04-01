@@ -39,75 +39,86 @@
         {
           "not": {
             "field": "name",
-            "match": "CDT-RG-??-...-PROD-UKS-###"
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-??-...-UKS-###')]" 
+            }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-??-...-UKW-###')]" 
+          }
+        },
+         {
+          "not": {
+            "field": "name",
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-??-....-UKS-###')]" 
+            }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-??-....-UKW-###')]" 
           }
         },
         {
           "not": {
             "field": "name",
-            "match": "CDT-RG-??-...-DR-UKW-###"
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-??-.....-UKS-###')]" 
+            }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-??-.....-UKW-###')]" 
+          }
+        },
+         {
+          "not": {
+            "field": "name",
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-??-......-UKS-###')]" 
+            }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-??-......-UKW-###')]" 
+          }
+        },{
+          "not": {
+            "field": "name",
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-???-...-UKS-###')]" 
+            }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-???-...-UKW-###')]" 
+          }
+        },
+         {
+          "not": {
+            "field": "name",
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-????-....-UKS-###')]" 
+            }
+        },
+        {
+          "not": {
+            "field": "name",
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-????-....-UKW-###')]" 
           }
         },
         {
           "not": {
             "field": "name",
-            "match": "CDT-RG-???-...-PROD-UKS-###"
-          }
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-?????-.....-UKS-###')]" 
+            }
         },
         {
           "not": {
             "field": "name",
-            "match": "CDT-RG-???-...-DR-UKW-###"
+            "match": "[[concat(parameters('customerAbbreviation'), '-RG-?????-.....-UKW-###')]" 
           }
-        },
-        {
-          "not": {
-            "field": "name",
-            "match": "CDT-RG-????-...-PROD-UKS-###"
-          }
-        },
-        {
-          "not": {
-            "field": "name",
-            "match": "CDT-RG-????-...-DR-UKW-###"
-          }
-        },
-        {
-          "not": {
-            "field": "name",
-            "match": "CDT-RG-??-....-PROD-UKS-###"
-          }
-        },
-        {
-          "not": {
-            "field": "name",
-            "match": "CDT-RG-??-....-DR-UKW-###"
-          }
-        },
-        {
-          "not": {
-            "field": "name",
-            "match": "CDT-RG-???-.....-PROD-UKS-###"
-          }
-        },
-        {
-          "not": {
-            "field": "name",
-            "match": "CDT-RG-???-.....-DR-UKW-###"
-          }
-        },
-        {
-          "not": {
-            "field": "name",
-            "match": "CDT-RG-????-......-PROD-UKS-###"
-          }
-        },
-        {
-          "not": {
-            "field": "name",
-            "match": "CDT-RG-????-......-DR-UKW-###"
-          }
-        }
+        }        
       ]
     },
     "then": {
